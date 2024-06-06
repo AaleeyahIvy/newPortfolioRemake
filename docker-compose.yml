@@ -13,6 +13,7 @@ services: # Services to run
    #- ./portfolio/public:/usr/share/nginx/html
   ports:
    - 81:81 # Plain and simple port mapping
+   #my url link should be http://192.168.50.84:81
   depends_on:
    - app # Makes sure the app is running before nginx starts
 
