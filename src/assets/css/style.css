@@ -1,0 +1,140 @@
+/*
+REMINDER:
+Use % for font sizes
+Use px for images
+Use px, %, or em for box sizes
+Use ratios for line height
+
+#nprogress .bar: The progress bar itself.
+#nprogress .peg: The "peg" at the end of the progress bar.
+#nprogress .spinner: The spinner, which is shown when showSpinner is set to true.
+#nprogress .spinner-icon: The SVG icon inside the spinner.
+
+*/
+:root {
+  --main-color:#ea339e;
+  --main-secondary-color:#fd87cc;
+  --secondary-color:#1F0011;
+  --secondary-secondary-color:#ffbfe1;
+  --main-text-color:#171616;
+  --main-white-color:#ffdbef;
+}
+body {
+  color: #171616;
+  display: block;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#nprogress .bar{
+  background: var(--main-color);
+  height: 5px;
+
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--main-color), 0 0 5px var(--main-color);
+}
+#nprogress .spinner-icon {
+  border-top-color: var(--main-color);
+  border-left-color: var(--main-color);
+}
+.router-link {
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.post-image {
+  width: 150px;
+  height: 150px;
+}
+.excerpt {
+  text-wrap: balance;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.post{
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--main-white-color);
+  border: #171616 2px solid;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  border: #171616 2px solid;
+  border-radius: 10px;
+  }
+.content {
+  text-wrap: balance;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.post-holder {
+  margin: auto;
+  padding: 10px;
+  display: grid;
+
+  background: var(--main-white-color);
+  border: #171616 2px solid;
+} 
+
+/* MEDIA QUERIES */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
