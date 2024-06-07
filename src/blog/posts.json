@@ -36,6 +36,15 @@
             "excerpt": "About my web development history.",
             "content": "<h2>How I got started?</h2> Well first off, I have always enjoyed creating things and making them look really nice. I have an extensive background in illustration and would love to get into graphic design. Though I love to learn complex subjects such as engineering. So why not be a web developer or delve into software engineer while also creating my own projects.I'm learning a lot at my current job and it's pressuring me to learn new frameworks.<br><br> At first, Vue.JS, was absolutely terrifying to me because I always used vanilla JS and used different libraries for design and animations. But eventually it got more comfortable and I said 'Hey' why not use this framework to create a new portfolio.",
             "image": "abstractsky.jpg"
+        },
+        {
+            "id": 5,
+            "title": "How to set up Vue.js App with Docker",
+            "author": "Aaleeyah",
+            "date": "June, 7th, 2024",
+            "excerpt": "Setting up a Vue.js app with Docker using NGINX.",
+            "content": "I followed like 4 different guides on how to setup Docker using NGINX and Vue.js. It can be confusing, you may have to experience trial and error.  First off, I created my project using the `npm create vue@latest`",
+            "image": "beachsky2.jpg"
         }
     ]
 }

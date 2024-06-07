@@ -20,3 +20,6 @@ COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 81
 # Start Nginx to serve the application
 CMD ["nginx", "-g", "daemon off;"]
+
+# docker run -p 8081:81 newportfolioremake to run the container
+# or docker-compose up -d --build to run the container with docker-compose
