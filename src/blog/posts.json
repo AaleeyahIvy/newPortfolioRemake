@@ -8,7 +8,8 @@
             "date": "May 31st, 2024",
             "excerpt": "First post using JSON post system. I will be adding more features soon.",
             "content": "Well, I am writing my first blog post. I was thinking of using a middleware cms like buttercms or wordpress, but I decided to write my own. I am using a json file to store my posts. I will be adding more features to this blog soon. Stay tuned!",
-            "image": "oceansunset.jpg"
+            "image": "oceansunset.jpg",
+            "tags": ["first", "post", "json", "blog"]
         },
         {
             "id": 2,
@@ -17,7 +18,8 @@
             "date": "May 31st, 2024",
             "excerpt": "This is a dummy post to make sure things are rendering correctly.",
             "content": "This is my dummy post, just making sure things get rendered correctly and all that cool jazz.",
-            "image": "nightsky.jpg"
+            "image": "nightsky.jpg",
+            "tags": ["dummy", "test"]
         },
         {
             "id": 3,
@@ -26,7 +28,8 @@
             "date": "June, 3rd, 2024",
             "excerpt": "Details about my json blog system. What i want to do with it and how it's going so far.",
             "content": "I don't want to invest in a CMS, so I am working on a json blog system. Right now, I have a json file filled with my blog posts, and maybe will add features to this soon like - add/delete blog post functionality. <br><br> My current tech stack is Vue.js, Node.js, and Express.js with webpack and anime.js for animations. <li> Something something </li> <li> Testing my markdown <li",
-            "image": "aestheticsky.jpg"
+            "image": "aestheticsky.jpg",
+            "tags": ["json", "blog", "system"]
         },
         {
             "id": 4,
@@ -35,7 +38,8 @@
             "date": "June, 4th, 2024",
             "excerpt": "About my web development history.",
             "content": "<h2>How I got started?</h2> Well first off, I have always enjoyed creating things and making them look really nice. I have an extensive background in illustration and would love to get into graphic design. Though I love to learn complex subjects such as engineering. So why not be a web developer or delve into software engineer while also creating my own projects.I'm learning a lot at my current job and it's pressuring me to learn new frameworks.<br><br> At first, Vue.JS, was absolutely terrifying to me because I always used vanilla JS and used different libraries for design and animations. But eventually it got more comfortable and I said 'Hey' why not use this framework to create a new portfolio.",
-            "image": "abstractsky.jpg"
+            "image": "abstractsky.jpg",
+            "tags": ["web", "development"]
         },
         {
             "id": 5,
@@ -43,8 +47,9 @@
             "author": "Aaleeyah",
             "date": "June, 7th, 2024",
             "excerpt": "Setting up a Vue.js app with Docker using NGINX.",
-            "content": "I followed like 4 different guides on how to setup Docker using NGINX and Vue.js. It can be confusing, you may have to experience trial and error.  First off, I created my project using the `npm create vue@latest`",
-            "image": "beachsky2.jpg"
+            "content": "<p>I followed 4 different guides on how to set up Docker using NGINX and Vue.js. It can be confusing, you may have to experience trial and error. I first off didn't go into using Docker until I got half of my portfolio established which I do not recommend. However, if you don't decide until afterward, that's okay.</p><p>Whenever you start a vue project you may use this command in your terminal: <code>npm create vue@latest</code> Which creates a project with all the things you need for a starter project - though it's all inside a folder. If you create a git repository based on this folder and track it inside only the folder you won't be able to track docker/server files outside that folder. For example, it creates a folder that looks somewhat like this: </p><pre><code>project folder\n|<span class=\\\"hljs-string\\\">--dist folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--css folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--img folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--js folder\n</span>|\n|<span class=\\\"hljs-string\\\">--public folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--favicon.ico file\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--index.html file\n</span>|\n|<span class=\\\"hljs-string\\\">--src folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--assets\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">   </span>|<span class=\\\"hljs-string\\\">--css folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">   </span>|<span class=\\\"hljs-string\\\">--images folder\n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\"> \n</span>|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--components\n</span>|<span class=\\\"hljs-string\\\">  </span>|\n|<span class=\\\"hljs-string\\\">  </span>|<span class=\\\"hljs-string\\\">--views\n</span>|\n|<span class=\\\"hljs-string\\\">--.gitignore\n</span>|<span class=\\\"hljs-string\\\">--App.vue\n</span>|<span class=\\\"hljs-string\\\">--package.json file\n</span>|<span class=\\\"hljs-string\\\">--package.json-lock file\n</span>|<span class=\\\"hljs-string\\\">--main.js\n</span>|<span class=\\\"hljs-string\\\">--README.md\n</span>|<span class=\\\"hljs-string\\\">--vue.config.js</span>\n</code></pre><p>The issue with this is that you have to run your scripts inside the nested project folder, that Vue just created for you. To resolve issues like this, you can move all your contents into the original folder you made for the project and work from there. This alleviates issues when you get docker all setup. When you get started with docker you'll need to have those folders outside the project itself and if you remember once you create a repo on that starting folder, it won't track files outside of it.</p> <p>Getting Docker & NGINX ready involves your configurations for both services. Create a folder: nginx and a file: nginx.conf</p>",
+            "image": "beachsky2.jpg",
+            "tags": ["docker", "vue", "nginx"]
         }
     ]
 }

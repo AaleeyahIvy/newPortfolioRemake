@@ -3,6 +3,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import App from '@/App.vue';
 import router from '@/routes';
+//import VueMeta from 'vue-meta';
 //import store from '@/store';
 import '@/assets/css/style.css';
 /* 
@@ -24,4 +25,5 @@ router.beforeResolve((to) => {
 const app = createApp(App);
 //app.use(store);
 app.use(router);
+//app.use(VueMeta);
 app.mount('#app');

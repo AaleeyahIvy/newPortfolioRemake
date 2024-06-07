@@ -29,6 +29,29 @@ export default {
             return require(`@/assets/images/${this.post.image}`);
         },
     },
+    mounted() {
+        //NOTES ON THIS WRITE DOWN WHAT THIS DOES AND HOW IT WORKS NEXT WEEK
+        document.title = this.post.title;
+        let metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', this.post.description);
+        } else {
+            let meta = document.createElement('meta');
+            meta.name = "description";
+            meta.content = this.post.description;
+            document.getElementsByTagName('head')[0].appendChild(meta);
+        }
+
+        let metaKeywords = document.querySelector('meta[name="keywords"]');
+        if (metaKeywords) {
+            metaKeywords.setAttribute('content', this.post.tags.join(','));
+        } else {
+            let meta = document.createElement('meta');
+            meta.name = "keywords";
+            meta.content = this.post.tags.join(',');
+            document.getElementsByTagName('head')[0].appendChild(meta);
+        }
+    },
 };
 </script>
 <style>
@@ -45,11 +68,19 @@ img {
     border-radius: 10px;
     }
 .blog-content {
-    text-wrap: balance;
+    align-items: start;
+    text-wrap: wrap;
     color: var(--main-text-color);
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
+}
+pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    white-space: pre-wrap;
 }
 .blog-post-holder {
     margin: auto;
