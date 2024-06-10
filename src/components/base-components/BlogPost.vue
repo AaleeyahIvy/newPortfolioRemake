@@ -34,7 +34,7 @@ export default {
         document.title = this.post.title;
         let metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', this.post.description);
+            metaDescription.setAttribute('content', this.post.excerpt);
         } else {
             let meta = document.createElement('meta');
             meta.name = "description";
@@ -44,7 +44,7 @@ export default {
 
         let metaKeywords = document.querySelector('meta[name="keywords"]');
         if (metaKeywords) {
-            metaKeywords.setAttribute('content', this.post.tags.join(','));
+            metaKeywords.setAttribute('content', this.post.tags.join(', '));
         } else {
             let meta = document.createElement('meta');
             meta.name = "keywords";
@@ -75,7 +75,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
 }
-pre{
+pre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,4 +91,5 @@ pre{
     background: var(--main-white-color);
     border: #171616 2px solid;
 } 
+
 </style>;

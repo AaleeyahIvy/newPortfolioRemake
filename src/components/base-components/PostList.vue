@@ -4,6 +4,10 @@
     </div>
     <div class="post-holder col-10">
         <PostPreview v-for="post in filteredPosts" :key="post.id" :post="post" />
+        <div class="pagination">
+            <button @click="prevPage">Previous</button>
+            <button @click="nextPage">Next</button>
+        </div>
     </div>
 </template>
 
@@ -20,16 +24,30 @@ export default {
         return {
             posts: posts.posts,
             search: "",
+            currentPage: 1,
+            pageSize: 5,
         };
     },
     computed: {
-        filteredPosts() {
+        filteredPosts() { // Can handle pagination here
             if (!this.search) {
-                return this.posts;
+                return this.posts.slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize);
             }
             return this.posts.filter((post) => {
                 return post.title.toLowerCase().includes(this.search.toLowerCase());
-            });
+            }).slice((this.currentPage - 1) * this.pageSize, this.currentPage * this.pageSize);
+        },
+    },
+    methods: {
+        nextPage() {
+            if(this.currentPage * this.pageSize < this.posts.length){
+                this.currentPage++;
+            }
+        },
+        prevPage() {
+            if (this.currentPage > 1){
+                this.currentPage--;
+            }
         },
     },
 };
@@ -57,8 +75,23 @@ export default {
     background: var(--main-white-color);
     color: var(--main-color);
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
 
-
+button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--main-white-color);
+}
+button:hover {
+    background: var(--main-white-color);
+    color: var(--main-color);
+}
 /* NOTES */
 /*
 this.posts.filter((post) => {...}): 
