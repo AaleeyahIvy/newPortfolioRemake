@@ -18,10 +18,6 @@
             <img :src="require('@/assets/images/redphone.png')" class="picture" @click="showImage($event)">
             <img :src="require('@/assets/images/claydhdLogo.png')" class="picture" @click="showImage($event)">
         </div>
-        <div class="pagination">
-            <button @click="prevPage">Previous</button>
-            <button @click="nextPage">Next</button>
-        </div>
     </div>
 </template>
 <script>
@@ -35,9 +31,6 @@ export default {
             aboutpage: 'This is the Art Gallery page',
             images: [],
             selectedImage: null,
-            currentPage: 1,
-            pageSize: 12,
-
         }
     },
     methods: {

@@ -1,100 +1,62 @@
 <template>
-    <div class="contact-box col-6">
-        <div class="form-box">
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="info-box">
-            <div class="contact-info" >
-                <img :src="require('@/assets/images/HappyAaleeyah1.jpg')" alt="Aaleeyah Ivy-Kilgore">
-                <p>Email: <a href="mailto:samanthastar87@gmail.com">samanthastar87@gmail.com</a></p>
-                <p>Phone: 513-376-5017</p>
-                <p>Lives In Cincinnati, OH</p>
-            </div>
+    <div class="outer-card">
+        <div class="inner-card">
+            <h3>Reach out!</h3>
+            <div>⊹ ₊  ⁺‧₊˚ ♡ ପ(๑•ᴗ•๑)ଓ ♡˚₊‧⁺ ₊ ⊹</div>
+            <div>Phone: 513-376-5017</div>
+            <div>Email: <a href="mailto:samanthastar87@gmail.com">samanthastar87@gmail.com</a></div>
+            <div>Discord: @aaleeyah</div>
+            <h3>I game too!</h3>
+            <div>⊹ ₊✧(⸝⸝⸝ᵒ̴̶̷ ｡ ᵒ̴̶̷⸝⸝⸝)✧₊ ⊹</div>
+            <div>League Of Legends</div>
+            <div>Valorant</div>
+            <div>Overwatch 2</div>
+            <div>COD, and Fortnite</div>
         </div>
     </div>
 </template>
 <script>
+import VanillaTilt from 'vanilla-tilt';
 export default {
     name: 'ContactComponent',
     data() {
         return {
             aboutpage: 'This is the Contact page'
         }
+    },
+    mounted(){
+        const tilt = document.querySelector(".outer-card");
+         VanillaTilt.init(tilt, {
+            max: 25,
+            speed: 400,
+        });
+
+
     }
 }
 </script>
 <style>
-.contact-box {
+.outer-card {
     margin: auto;
-    padding: 10px;
+    padding: auto;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 192, 217);
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    background: var(--main-white-color);
-    border: #171616 2px solid;
-}
-.form-box {
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    background: var(--main-white-color);
-}
-.info-box {
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    background: var(--main-white-color);
-}
-.contact-form {
-    width: 100%;
-    display: block;
-    margin: 0 10px;
-    border: #171616 2px solid;
-}
-.contact-info {
-    flex: 1;
-    display: block;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
-    padding: 10px;
-    border: #171616 2px solid;
-}
-label { 
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    font-size: 1.2rem;
-}
-input {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transform: perspective(500px);
 }
-textarea {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+.inner-card {
+    width: 300px;
+    height: 300px;
+    color: var(--main-text-color);
+    background-color: #ffffff47;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateZ(5px);
 }
-button {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    font-size: 1.2rem;
-}
-
 </style>

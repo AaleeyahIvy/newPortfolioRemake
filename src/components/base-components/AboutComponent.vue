@@ -8,6 +8,7 @@
             I graduated high school in 2020 and went straight to college pursuing an associate in computer programming. During college, the pandemic was in full swing and it got super boring staying indoors constantly, so I created a jewelry company called - CLAYDHD. It's more of a variety company now, specializing in web design, jewelry, and cute accessories. <br><br>
             Eventually, I would like to be more specialized in web design or web development. Anyway, some things I enjoy these days are, roller/ice skating, designing, playing competitive video games, and creating new products for my business. 
         </p>
+        <p class="text col-12">I tried to make my portfolio really reactive, so mess around with it, click on things. I love fun websites so I made one.</p>
         <div class="icons">
             <h1>My Socials:</h1>
             <a class="iconLink" href="https://github.com/AaleeyahIvy" target="_blank"><div id="iconGH" class="icon">Github</div></a>

@@ -31,6 +31,7 @@ export default {
     },
     mounted() {
         //NOTES ON THIS WRITE DOWN WHAT THIS DOES AND HOW IT WORKS NEXT WEEK
+        // FINISH YOUR BLOG POST ABOUT DOCKER AND VUE.JS
         document.title = this.post.title;
         let metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
