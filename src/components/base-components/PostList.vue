@@ -83,6 +83,7 @@ export default {
 
 button {
     padding: 5px;
+    margin: 5px;
     border-radius: 10px;
     border: 2px solid var(--main-color);
     background: var(--main-color);
