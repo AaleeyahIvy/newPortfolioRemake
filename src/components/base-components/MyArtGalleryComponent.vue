@@ -1,7 +1,7 @@
 <template>
     <div class="picture-box col-10">
         <div class="row">
-            <img :src="require('@/assets/images/blackafro.png')" class="picture" @click="showImage($event)">
+            <img :src="require('@/assets/images/blueorangedash.png')" class="picture" @click="showImage($event)">
             <img :src="require('@/assets/images/hawaii.png')" class="picture" @click="showImage($event)">
             <img :src="require('@/assets/images/colorstudy.png')" class="picture" @click="showImage($event)">
             <img :src="require('@/assets/images/idrc.png')" class="picture" @click="showImage($event)">
